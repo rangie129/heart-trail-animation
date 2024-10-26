@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+
+}
+
+span {
+    background-image: url("https://cdn1.iconfinder.com/data/icons/video-game-elements-4/32/Heart-512.png");
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate 10s linear;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100% {
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}
